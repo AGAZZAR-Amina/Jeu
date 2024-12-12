@@ -16,13 +16,5 @@ public class Personnage {
     }
 
 
-    public static void  main(String[]args){
-        Personnage monPersonnage = new Personnage() ;
-
-
-        monPersonnage.tourner(1);
-
-        System.out.println( monPersonnage.tourner(1));
-    }
-
+    
 }

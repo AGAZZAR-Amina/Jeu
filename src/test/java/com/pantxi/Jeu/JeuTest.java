@@ -24,13 +24,26 @@ public class JeuTest{
         System.out.println("Nettoyage après chaque test");
     }
 
-@Test
-
-public void  TestTourner1(){
-    assertEquals("Est",   monPersonnage.tourner(1));
-    assertEquals("Nord",   monPersonnage.tourner(-1));
-    assertEquals("Nord", monPersonnage.tourner(0));
+    @Test
+       public void  TestTourner() {
+        assertEquals("Est", monPersonnage.tourner(1));
+        assertEquals("Sud", monPersonnage.tourner(1));
+        assertEquals("Ouest", monPersonnage.tourner(1));
 }
+@Test
+public void TestTourner1(){
+        monPersonnage = new Personnage();
+    assertEquals("Est", monPersonnage.tourner1(1));
+    assertEquals("Sud", monPersonnage.tourner1(1));
+    assertEquals("Ouest", monPersonnage.tourner1(1));
+    assertEquals("Nord", monPersonnage.tourner1(1));
+    
+}
+
+
+
+
+
 }
 
 
